@@ -11,6 +11,9 @@ authors = [
 description = "A useful package for web scraping with Selenium"
 readme = "README.md"
 requires-python = ">=3.7"
+dependencies = [
+    "selenium",
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",

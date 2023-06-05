@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 
-#************************************************************#
-#                                                            #
-# Written by Yuri H. Galvao <yuri@galvao.ca>, May 2023       #
-#                                                            #
-#************************************************************#
-
 # Importing from modules / packages
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options

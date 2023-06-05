@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 
-#************************************************************#
-#                                                            #
-# Written by Yuri H. Galvao <yuri@galvao.ca>, March 2023     #
-#                                                            #
-#************************************************************#
-
 import os, json, sys, time, logging, traceback
 from datetime import datetime
 from contextlib import contextmanager
@@ -87,7 +81,7 @@ def check_file(path_to_file:str)->bool:
 
 def ask_for_data(required_data:tuple, file_name_no_extension:str, ask:bool=True)->dict:
     """
-    Asks the user for input, creates a JSON configuration file, and returns the input as a dictionary.
+    Asks the user for input, creates a JSON configuration file (.conf), and returns the input as a dictionary.
 
     Args:
         required_data (tuple): The data to be collected from the user.
@@ -109,8 +103,6 @@ def ask_for_data(required_data:tuple, file_name_no_extension:str, ask:bool=True)
             data_dict[data[0]] = data[1]
 
         json.dump(data_dict, open(f'config/{file_name_no_extension}.conf', 'w'))
-    
-    print()
 
     return data_dict
 
