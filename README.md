@@ -17,21 +17,27 @@ pip install py-easy-scrap
 
 ## Usage
 
+In your project directory, create a new directory for your logs - it can be just called 'logs':
+```bash
+mkdir logs
+```
+
+Then, import the package:
 ```python
-import py_easy_scrap as pes
+import pyeasyscrap as pes
 ```
 
 ### Get WebDriver
 
 ```python
-driver = get_webdriver(headless)
+driver = pes.get_webdriver(headless)
 ```
 This will return an instance of webdriver.Firefox (GeckoDriver).
 
 ### Get Element
 
 ```python
-element = get_element(driver, value="element_xpath")
+element = pes.get_element(driver, value="element_xpath")
 ```
 
 This will return the web element found using the specified driver and value. By default, this function uses 'XPATH' as the method of searching. However, you can change this by providing 'ID' or 'LINK_TEXT' as the 'by' argument.
@@ -44,7 +50,7 @@ Also, please remember to replace `"element_xpath"` with the actual Xpath, ID, or
 ### Scroll to Element
 
 ```python
-scroll_to(driver, element)
+pes.scroll_to(driver, element)
 ```
 
 This will use JavaScript to scroll the view of the given webdriver to the specified web element.
@@ -54,7 +60,7 @@ This will use JavaScript to scroll the view of the given webdriver to the specif
 ```python
 required_data = ("username", "password")
 file_name_no_extension = "user_credentials"
-ask_for_data(required_data, file_name_no_extension)
+pes.ask_for_data(required_data, file_name_no_extension)
 ```
 
 This will return a dictionary containing the collected data and will create a JSON configuration (.conf) file.

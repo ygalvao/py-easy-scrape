@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='py-easy-scrap',
-    version='0.1.0',
+    version='0.1.3',
     url='https://github.com/ygalvao/py-easy-scrap',
     author='Yuri Henrique Galvao',
     author_email='yuri@galvao.ca',
