@@ -1,0 +1,21 @@
+*.py[oc]
+
+# Temp files
+*~
+~*
+.*~
+\#*
+.#*
+*#
+
+# Build files
+build
+dist
+pkg
+*.egg
+*.egg-info
+
+# pytest
+.cache/
+.pytest_cache
+__pycache__

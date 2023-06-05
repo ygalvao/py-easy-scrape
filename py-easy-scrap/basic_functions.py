@@ -13,7 +13,7 @@ from contextlib import contextmanager
 args = sys.argv[1:] # List of arguments that were passed
 
 yes_for_all = True if '--yes-for-all' in args else False
-headless = False if '--show-browser' in args else True if '--headless' in args else confirm('Do you want the browser to be headless (i.e., you won\'t see it)? [y/n] ')
+log_dir = args[args.index('--log-dir')+1] if '--log-dir' in args else 'logs' # The directory where the log files will be saved
 
 # Declaring and configuring the logger
 class FileHandlerNotEmpty(logging.FileHandler):
@@ -37,7 +37,7 @@ log_file_name = f'{now}.log'
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s')
-file_handler = FileHandlerNotEmpty('logs/'+log_file_name)
+file_handler = FileHandlerNotEmpty(f'{log_dir}/{log_file_name}')
 console_handler = logging.StreamHandler(sys.stdout)
 file_handler.setFormatter(formatter)
 file_handler.setLevel(logging.ERROR)

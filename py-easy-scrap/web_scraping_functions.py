@@ -16,6 +16,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from basic_functions import *
 
+headless = False if '--show-browser' in args else True if '--headless' in args else confirm('Do you want the browser to be headless (i.e., you won\'t see it)? [y/n] ')
+
 def get_webdriver(headless:bool)->object:
     """
     Sets up and returns a selenium webdriver object with desired configurations. Uses GeckoDriver (Firefox).
@@ -29,10 +31,9 @@ def get_webdriver(headless:bool)->object:
 
     # Declaring some important variables for the Gecko Webdriver (Firefox)
     options = Options()
-    #linux_useragent = "Mozilla/5.0  (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
     options.set_preference("browser.download.folderList", 2)
     options.set_preference("browser.download.manager.showWhenStarting", False)
-    options.set_preference("browser.download.dir", DOWNLOAD_DIRECTORY+'/raw')
+    # options.set_preference("browser.download.dir", DOWNLOAD_DIRECTORY)
     options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/x-gzip")
     options.add_argument('disable-infobars')
     options.add_argument('--disable-extensions')
