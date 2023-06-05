@@ -13,7 +13,7 @@ pip install py-easy-scrap
 ## Requirements
 
 - Python 3.7 or higher
-- Selenium
+- Selenium, along with __GeckoDriver__ (Firefox)
 
 ## Usage
 
