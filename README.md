@@ -2,7 +2,13 @@
 
 ## Description
 
-A useful package for web scraping with Selenium
+__A useful package for web scraping with Selenium.__
+
+This package provides useful wrapping of some of the more cumbersome aspects of using Selenium directly, such as initializing the WebDriver, scrolling, and handling elements.
+
+Also, it simplifies some common tasks in web scraper bots, such as  asking the user to manually input some data when necessary and checking if some file exists in the user's computer.
+
+Moreover, it kind of does the same with Logging: Py Easy Scrape comes with built-in logging, which can be a significant advantage for quickly deploying, debugging, and monitoring your web scraping project!
 
 ## Installation
 
