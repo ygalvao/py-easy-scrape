@@ -17,7 +17,7 @@ pip install py-easy-scrape
 
 ## Usage
 
-In your project directory, create a new directory for your logs - it can be just called 'logs':
+Py-Easy-Scrape has a built-in logging system that, so far, needs a directory for all the logs that are going to be generated. Hence, in your project directory, create a new directory called 'logs':
 ```bash
 mkdir logs
 ```
@@ -30,9 +30,9 @@ import pyeasyscrape as pes
 ### Get WebDriver
 
 ```python
-driver = pes.get_webdriver(headless)
+driver = pes.get_webdriver(headless=True)
 ```
-This will return an instance of webdriver.Firefox (GeckoDriver).
+This will return a headless instance of webdriver.Firefox (GeckoDriver).
 
 ### Get Element
 

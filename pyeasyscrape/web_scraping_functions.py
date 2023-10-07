@@ -12,7 +12,7 @@ from .basic_functions import *
 
 headless = False if '--show-browser' in args else True if '--headless' in args else confirm('Do you want the browser to be headless (i.e., you won\'t see it)? [y/n] ')
 
-def get_webdriver(headless:bool)->object:
+def get_webdriver(headless:bool=False)->object:
     """
     Sets up and returns a selenium webdriver object with desired configurations. Uses GeckoDriver (Firefox).
 

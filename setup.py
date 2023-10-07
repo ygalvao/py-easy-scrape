@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='py-easy-scrape',
-    version='0.1.3',
+    version='0.1.5',
     url='https://github.com/ygalvao/py-easy-scrape',
     author='Yuri Henrique Galvao',
     author_email='yuri@galvao.ca',
