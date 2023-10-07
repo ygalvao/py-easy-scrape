@@ -3,9 +3,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='py-easy-scrap',
+    name='py-easy-scrape',
     version='0.1.3',
-    url='https://github.com/ygalvao/py-easy-scrap',
+    url='https://github.com/ygalvao/py-easy-scrape',
     author='Yuri Henrique Galvao',
     author_email='yuri@galvao.ca',
     description='A useful package for web scraping with Selenium',

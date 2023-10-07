@@ -1,4 +1,4 @@
-# Py-Easy-Scrap
+# Py-Easy-Scrape
 
 ## Description
 
@@ -7,7 +7,7 @@ A useful package for web scraping with Selenium
 ## Installation
 
 ```bash
-pip install py-easy-scrap
+pip install py-easy-scrape
 ```
 
 ## Requirements
@@ -24,7 +24,7 @@ mkdir logs
 
 Then, import the package:
 ```python
-import pyeasyscrap as pes
+import pyeasyscrape as pes
 ```
 
 ### Get WebDriver
