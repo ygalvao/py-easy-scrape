@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-easy-scrape"
-version = "0.1.6"
+version = "0.1.6.1"
 authors = [
   { name="Yuri Henrique Galvao", email="yuri@galvao.ca" },
 ]
