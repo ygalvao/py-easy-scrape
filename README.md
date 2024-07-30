@@ -52,6 +52,22 @@ Please be aware that the method of searching ('XPATH', 'ID', or 'LINK_TEXT') hig
 
 Also, please remember to replace `"element_xpath"` with the actual Xpath, ID, or link text of the element you want to find.
 
+### Check Element
+
+```python
+is_clickable = check_element(driver, xpath="element_xpath")
+```
+
+This will return `True` if the web element specified by the XPath is found, displayed, and clickable using the provided driver. If not, it will return `False`. 
+
+Alternatively, you can directly pass a web element object:
+
+```python
+is_clickable = check_element(driver, web_element=element)
+```
+
+Please replace `"element_xpath"` with the actual XPath of the element you want to check. This method ensures the element is both present and interactive before performing further actions.
+
 
 ### Scroll to Element
 
